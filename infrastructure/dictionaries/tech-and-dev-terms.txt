@@ -1,0 +1,47 @@
+# Technology and development terms
+#
+# Programming concepts, tools, standards, and technical jargon.
+# One word per line. Case-insensitive matching.
+
+# Web / frontend concepts
+codemod
+codemods
+frontends
+frontmatter
+microfrontend
+microfrontends
+touchpoints
+wireframes
+workstream
+workstreams
+
+# Development tooling & practices
+Chromatic
+jscodeshift
+Pandoc
+pyproject
+tsup
+wordlists
+
+# Standards & acronyms
+WCAG
+
+# Infrastructure & platforms
+Heroku
+heroku
+
+# Migration & AST terms
+codepaths
+microsyntax
+ngrx
+
+# General tech vocabulary
+deployability
+helpdesk
+reimaging
+mentee
+agentic
+fintech
+popups
+rebranded
+timezone

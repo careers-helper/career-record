@@ -1,0 +1,36 @@
+# Project-specific terms
+#
+# Identifiers, acronyms, and domain terms specific to this repository.
+# One word per line. Case-insensitive matching.
+
+# Personal identifiers
+elenavasquezuk
+
+# Project names
+react-migrator
+
+# Repository conventions & status markers
+NOAPP
+devex
+cursorrules
+
+# Domain acronyms
+BPSS
+PAYE
+
+# Domain vocabulary
+dealbreaker
+dealbreakers
+negotiables
+
+# People
+Vasquez
+Sinek
+
+# US spellings used in code/API contexts
+# These are intentional — they reference actual property names,
+# keywords, or API identifiers that use American English.
+behavior
+colored
+labeled
+modeling

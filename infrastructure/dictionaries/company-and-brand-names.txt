@@ -1,0 +1,34 @@
+# Company and brand names
+#
+# Companies, products, and brand names used across the career record.
+# One word per line. Case-insensitive matching.
+
+# Companies & organisations
+Aegon
+Datapoint
+Kova
+Meridian
+Northgate
+Wellframe
+Moneybox
+
+# Government
+GDS
+
+# Locations & venues
+Adelphi
+
+# Retail & partners
+Waitrose
+
+# Products & frameworks (company-specific)
+Turborepo
+AngularJS
+angularjs
+Docusaurus
+Recharts
+Tabnine
+
+# Platforms
+govuk
+paas

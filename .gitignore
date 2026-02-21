@@ -1,0 +1,11 @@
+# Folders (A-Z)
+.claude/
+.husky/_/
+coverage/
+dist/
+node_modules/
+tmp/
+
+# Files (A-Z)
+*.tmp.*
+

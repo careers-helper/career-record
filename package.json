@@ -1,0 +1,24 @@
+{
+  "name": "career-record",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "packageManager": "pnpm@10.22.0",
+  "scripts": {
+    "lint:career-record": "tsx scripts/lint-career-record.ts",
+    "lint:career-record:strict": "tsx scripts/lint-career-record.ts --strict",
+    "spellcheck": "cspell \"**/*.md\" --no-progress",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "cspell": "^9.6.4",
+    "husky": "^9.1.7",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

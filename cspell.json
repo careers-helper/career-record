@@ -1,0 +1,33 @@
+{
+  "version": "0.2",
+  "language": "en-GB",
+  "dictionaryDefinitions": [
+    {
+      "name": "company-and-brand-names",
+      "path": "./infrastructure/dictionaries/company-and-brand-names.txt"
+    },
+    {
+      "name": "tech-and-dev-terms",
+      "path": "./infrastructure/dictionaries/tech-and-dev-terms.txt"
+    },
+    {
+      "name": "project-specific",
+      "path": "./infrastructure/dictionaries/project-specific.txt"
+    }
+  ],
+  "dictionaries": [
+    "company-and-brand-names",
+    "tech-and-dev-terms",
+    "project-specific"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "pnpm-lock.yaml",
+    "dist",
+    "coverage",
+    "tmp",
+    ".husky",
+    "output/*/cv.docx",
+    "infrastructure/generate-cv-docx.py"
+  ]
+}

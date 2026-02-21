@@ -1,0 +1,30 @@
+# Automated CV Review: Staff Frontend Engineer — BBC iPlayer & Sounds
+
+## Strong Alignment
+
+- **React and TypeScript expertise:** The CV demonstrates extensive, current React and TypeScript experience across multiple roles, spanning from 2018 to the present. The candidate is working with React 18/19 and TypeScript daily at scale (15 applications, 45+ developers), which exceeds the depth we would expect for this role.
+- **Design systems and shared component libraries:** This is an exceptionally strong match. The candidate has built and maintained component libraries at three separate organisations: 80+ components at Aegon UK (with design tokens, Storybook, and automated accessibility testing), 45 components at Kova, and 60+ components at Wellframe Health. The explicit mention of design tokens via Style Dictionary and Figma-to-code parity suggests direct experience with the kind of cross-product design system work central to this role and the BBC Design System.
+- **Accessibility credentials:** The GDS background with strict WCAG 2.1 AA compliance, combined with accessibility audit experience (40 WCAG violations identified and fixed), and automated axe-core testing in CI at Aegon, demonstrates a genuine commitment to inclusive design. The personal a11y-audit-dashboard project reinforces this. BBC accessibility standards are demanding, and this candidate appears well-prepared.
+- **Web performance:** Core Web Vitals tracking, Lighthouse CI performance budgets, and a concrete performance outcome (8-10 second load time reduced to under 2 seconds) demonstrate practical performance optimisation experience. This aligns well with our performance requirements across iPlayer and Sounds.
+- **Cross-team technical leadership:** Leading frontend architecture across 8 teams and 45+ developers at Aegon, and providing architectural direction across 3 squads at Kova, demonstrates the kind of cross-squad influence this role requires. The community of practice (12 to 35+ engineers) suggests an ability to build consensus and shared ownership, which is essential when working across our 3 squads.
+- **Mentoring:** The CV evidences direct team leadership (3-person team at Aegon) and cross-team knowledge transfer through embedded pairing and a community of practice. This aligns with the expectation to mentor and develop frontend engineers across the team.
+- **Server-side rendering:** Next.js experience is evidenced in the personal projects section. The GDS role also demonstrates a server-rendering background, though with older technology.
+- **Progressive enhancement:** The GDS role specifically calls out progressive enhancement as a core practice, which is valued for our work across a wide range of devices and connection speeds.
+
+## Gaps or Concerns
+
+- **No media streaming or video/audio experience:** The CV contains no reference to media streaming, video playback, audio technologies, or related web APIs (Media Source Extensions, HLS, DASH, Web Audio). While this is listed as desirable rather than essential, other candidates for this role are likely to have direct experience with streaming technology, which is fundamental to iPlayer and Sounds.
+- **No evidence of high-traffic consumer product experience:** The CV describes enterprise and B2B applications (insurance platform, B2B payments, healthcare). While the Aegon estate serves customers, the CV does not claim the kind of millions-of-daily-users consumer scale that iPlayer and Sounds operate at. Performance optimisation at consumer scale involves different challenges (CDN strategies, device fragmentation, real-user monitoring across diverse populations) than enterprise performance work.
+- **Migration-heavy profile:** The CV is strongly oriented toward migration and modernisation work. While this demonstrates strong architectural thinking, the BBC role is primarily about evolving and improving existing React applications, not migrating from legacy frameworks. The candidate's profile and most bullet points emphasise migration, which may leave a recruiter wondering whether they would be equally motivated by feature delivery and incremental product improvement.
+- **A/B testing and experimentation:** The JD lists experience with A/B testing and experimentation platforms as desirable. The CV contains no reference to experimentation, feature flagging, or A/B testing.
+- **Progressive Web Apps:** Listed as desirable in the JD. No mention on the CV.
+- **Title and trajectory:** The candidate currently holds a Principal title and the CV headline reads "Staff-to-principal." Applying for a Staff role may raise questions about whether this represents a step back and whether the candidate would be content at this level.
+- **Micro-frontend experience not surfaced:** Although micro-frontends are listed as desirable in the JD, the CV does not explicitly mention micro-frontend architecture. This may be a missed opportunity, as the candidate's experience at Kova with module federation would be relevant.
+
+## Overall Assessment
+
+This is a strong technical candidate for the frontend architecture, design systems, and accessibility dimensions of the role. The depth of experience with shared component libraries, cross-team technical leadership, and WCAG compliance is above average for a Staff Frontend Engineer application. The GDS accessibility background is a particular differentiator.
+
+However, the absence of any media streaming or high-traffic consumer product experience is a notable gap for a role centred on iPlayer and Sounds. The CV reads as that of a migration and platform specialist rather than a consumer product engineer, which may not fully align with the day-to-day focus of this role. Competitive candidates are likely to bring direct experience with video/audio streaming technologies and consumer-scale web applications.
+
+The candidate would be a strong shortlist candidate on technical leadership, design systems, and accessibility grounds, but would need to demonstrate adaptability to the media and consumer product domain during the interview process.
