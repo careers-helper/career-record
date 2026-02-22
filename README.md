@@ -145,6 +145,34 @@ The standard flow:
 - `infrastructure/llm-personal-project-instructions.md` — personal project file standard
 - `infrastructure/glossary.md` — naming conventions and terminology
 
+## Customising CV styles
+
+The file `infrastructure/sample-cv.docx` is the style reference for all generated CVs. When the docx generation script runs, it passes this file to Pandoc as the `--reference-doc`, so the Word styles defined in it are applied to every output CV.
+
+The script maps CV elements to Word styles as follows:
+
+| CV element | Word style |
+|---|---|
+| Candidate name | Title |
+| Tagline (e.g. "Senior Software Engineer") | Subtitle |
+| Contact details line | Quote |
+| Section headings (Profile, Experience, Skills) | Heading 2 |
+| Role titles | Heading 3 |
+| Company, location, and dates | Heading 4 |
+| Older role lines (title and dates only) | Heading 5 |
+| Experience bullet points | List Paragraph |
+| Profile and role description paragraphs | Normal |
+
+To change how your CVs look:
+
+1. Open `infrastructure/sample-cv.docx` in Word (or a compatible editor).
+2. Modify the styles you want to change (e.g. update the font for Heading 3, change the colour of Subtitle, adjust margins).
+3. Save the file.
+4. Regenerate any CVs — the new styles will be picked up automatically.
+
+> [!TIP]
+> Edit the Word **styles** (via the Styles pane), not just the text formatting. Pandoc reads style definitions from the reference document, so direct formatting on sample text won't carry over.
+
 ## Useful commands
 
 ```bash

@@ -8,4 +8,5 @@ tmp/
 
 # Files (A-Z)
 *.tmp.*
+.envrc
 

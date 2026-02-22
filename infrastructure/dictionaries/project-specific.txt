@@ -26,6 +26,8 @@ negotiables
 # People
 Vasquez
 Sinek
+Bloggs
+joebloggs
 
 # US spellings used in code/API contexts
 # These are intentional — they reference actual property names,
