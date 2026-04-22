@@ -2,6 +2,8 @@
 
 A template repository for managing your career history and automating job applications using AI coding assistants. You maintain a comprehensive, private master record of your experience, then use LLM-powered agents to screen job descriptions, assess suitability, generate tailored CVs, and produce simulated recruiter reviews — all from a single conversational prompt.
 
+One practical benefit is getting through AI gatekeepers without resorting to lies, keyword stuffing, or fake optimisation tricks. The point is to improve how your real experience is presented so your CV can truthfully say: this is who I am, and this is why I'd be great for your job.
+
 > [!IMPORTANT]
 > This repository ships with AI-generated sample content. "Elena Vasquez" and any other names, organisations, or contact details are placeholders. Replace all sample data with your own details before real use.
 
@@ -21,7 +23,7 @@ flowchart TD
 
 1. **Build your career record** — replace the sample data in `profile/` with your own work history, personal projects, articles, and job preferences.
 2. **Drop in a job description** — save the job posting into the `inbox/` folder in any readable format: PDF, image (e.g. a screenshot), Markdown, or Word document.
-3. **Ask your AI assistant to "review the inbox"** — the agent reads your career record, parses the job description, and generates three artefacts per role. How you trigger this depends on your tool:
+3. **Ask your AI assistant to "review the inbox"** — the agent reads your career record, parses the job description, and generates three artefacts per role. In practice, this helps you shape a CV that is easier for both recruiters and automated screening systems to understand, while staying grounded in the facts of your record. How you trigger this depends on your tool:
    - **Claude Code (CLI):** run `claude` in the repo root and prompt `"Review the inbox and process all job descriptions"` or similar.
    - **GitHub Copilot or Codex in VSCode:** open the chat panel, set the context to this workspace, and send the same prompt
    - **Cursor:** open the repo and use Composer or Chat with the prompt above
@@ -35,7 +37,7 @@ flowchart TD
 
 ## Who this is for
 
-Any software engineer who wants a repeatable application workflow, regardless of seniority (junior to principal/staff), stack, or specialisation. The sample data in this repo is frontend-focused, but the structure is generic — adapt it by replacing the content and preference files.
+Any software engineer who wants a repeatable application workflow, regardless of seniority (junior to principal/staff), stack, or specialisation. It is especially useful if you want help translating a detailed, truthful career history into a CV that survives automated screening without turning into fiction. The sample data in this repo is frontend-focused, but the structure is generic — adapt it by replacing the content and preference files.
 
 ## Supported AI tools
 
