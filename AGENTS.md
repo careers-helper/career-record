@@ -56,8 +56,8 @@ This is a **private master career record**, not a portfolio or CV. User profile 
 
 ## Creating/Updating Experience Files
 
-- **Employment history:** Follow [infrastructure/llm-role-instructions.md](llm-role-instructions.md) for the complete specification (frontmatter, sections, language rules, conflict resolution).
-- **Personal projects:** Follow [infrastructure/llm-personal-project-instructions.md](llm-personal-project-instructions.md) for the complete specification.
+- **Employment history:** Follow [infrastructure/llm-role-instructions.md](infrastructure/llm-role-instructions.md) for the complete specification (frontmatter, sections, language rules, conflict resolution).
+- **Personal projects:** Follow [infrastructure/llm-personal-project-instructions.md](infrastructure/llm-personal-project-instructions.md) for the complete specification.
 
 ## Application Status
 
@@ -86,8 +86,8 @@ Only one status file exists per role folder at any time. When the status advance
 **New applications:** Drop the job description in `inbox/` (any readable format: PDF, image, Markdown, or Word) and use the Inbox Batch Workflow below to triage and generate CVs.
 
 **For a role already in `output/`** (after inbox triage):
-- To generate or regenerate a CV: follow [infrastructure/cv-generation-instructions.md](cv-generation-instructions.md).
-- To screen for fit or re-run a suitability assessment: read `profile/job-preferences.md` and [infrastructure/job-screening-instructions.md](job-screening-instructions.md).
+- To generate or regenerate a CV: follow [infrastructure/cv-generation-instructions.md](infrastructure/cv-generation-instructions.md).
+- To screen for fit or re-run a suitability assessment: read `profile/job-preferences.md` and [infrastructure/job-screening-instructions.md](infrastructure/job-screening-instructions.md).
 
 ## Inbox Batch Workflow (Two-Pass)
 
@@ -100,19 +100,19 @@ When the user asks to **"review the inbox"** (or similar phrasing), process all 
    a. Parse the filename to determine the company name and role title.
    b. Create the appropriate folder under `output/` using the naming convention `YYYYMMDD-<company>-<role>/` (where the date is today's date).
    c. Move (not copy) the file from `inbox/` to the new folder, renaming it to `job-description.<ext>` (preserving the original file extension).
-3. Generate a **suitability report** (`suitability.md`) for each role, following `profile/job-preferences.md` and [infrastructure/job-screening-instructions.md](job-screening-instructions.md). Process roles sequentially.
+3. Generate a **suitability report** (`suitability.md`) for each role, following `profile/job-preferences.md` and [infrastructure/job-screening-instructions.md](infrastructure/job-screening-instructions.md). Process roles sequentially.
 4. Present a summary table of all roles with their fit scores and recommendations so the user can decide which (if any) to proceed with.
 
 ### Pass 2: CV generation (on request)
 
 After the user has reviewed the suitability reports and indicated which roles to pursue:
 
-1. For each selected role, run the remaining steps of the standard workflow: generate the tailored CV (`cv.md` + `cv.docx`) and the recruiter-perspective review (`automated-review.md`), following [infrastructure/cv-generation-instructions.md](cv-generation-instructions.md).
+1. For each selected role, run the remaining steps of the standard workflow: generate the tailored CV (`cv.md` + `cv.docx`) and the recruiter-perspective review (`automated-review.md`), following [infrastructure/cv-generation-instructions.md](infrastructure/cv-generation-instructions.md).
 2. Create an empty `_REVIEW` status file for each completed role.
 3. Process roles sequentially (complete all artefacts for one role before starting the next).
 
 ## Example Role Files
 
-- [profile/work-experience/2022-06-aegon-principal-frontend-engineer.md](../profile/work-experience/2022-06-aegon-principal-frontend-engineer.md): Enterprise migration architecture role with clear distinction between cross-team influence and team ownership
-- [profile/work-experience/2020-01-kova-staff-frontend-engineer.md](../profile/work-experience/2020-01-kova-staff-frontend-engineer.md): Staff-level IC role establishing cross-team architectural direction without direct reports
-- [profile/work-experience/2024-03-aegon-migration-lead.md](../profile/work-experience/2024-03-aegon-migration-lead.md): Evolution from pure IC to combined architectural ownership with small team leadership
+- [profile/work-experience/2022-06-aegon-principal-frontend-engineer.md](profile/work-experience/2022-06-aegon-principal-frontend-engineer.md): Enterprise migration architecture role with clear distinction between cross-team influence and team ownership
+- [profile/work-experience/2020-01-kova-staff-frontend-engineer.md](profile/work-experience/2020-01-kova-staff-frontend-engineer.md): Staff-level IC role establishing cross-team architectural direction without direct reports
+- [profile/work-experience/2024-03-aegon-migration-lead.md](profile/work-experience/2024-03-aegon-migration-lead.md): Evolution from pure IC to combined architectural ownership with small team leadership
