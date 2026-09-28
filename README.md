@@ -44,11 +44,10 @@ Any software engineer who wants a repeatable application workflow, regardless of
 The repository ships with configuration files for:
 
 - **GitHub Copilot** (`.github/copilot-instructions.md`)
-- **Claude Code** (`CLAUDE.md`)
-- **OpenAI Codex** (`AGENTS.md`)
+- **Claude Code** and **OpenAI Codex** (`AGENTS.md`, read natively by both)
 - **Cursor** (`.cursorrules`)
 
-All point to a shared instruction set at `infrastructure/agent-instructions.md`, so the workflow is consistent regardless of which tool you use.
+`AGENTS.md` holds the shared instruction set and the Copilot and Cursor files point to it, so the workflow is consistent regardless of which tool you use. Claude Code reads `AGENTS.md` natively from version 2.1.277.
 
 ## Getting started
 
@@ -124,8 +123,7 @@ The standard flow:
 │       ├── cv.docx
 │       ├── automated-review.md
 │       └── _<STATUS>          #   Application status tracker
-├── infrastructure/            # Shared AI instructions, templates, and tooling
-│   ├── agent-instructions.md         # Primary operating guide for AI agents
+├── infrastructure/            # Instruction specs, templates, and tooling
 │   ├── cv-generation-instructions.md # CV generation rules and workflow
 │   ├── job-screening-instructions.md # Screening rubric and output format
 │   ├── llm-role-instructions.md      # Spec for work experience file format
@@ -134,12 +132,13 @@ The standard flow:
 │   ├── sample-cv.md / .docx          # CV structure template and style reference
 │   └── glossary.md                   # Naming conventions and standards
 ├── scripts/                   # Repository tooling (linting, validation)
-└── .github/ / CLAUDE.md / AGENTS.md / .cursorrules  # AI tool config
+├── AGENTS.md                  # Primary operating guide for AI agents
+└── .github/ / .cursorrules    # Copilot and Cursor pointers to AGENTS.md
 ```
 
 ## Key docs
 
-- `infrastructure/agent-instructions.md` — primary operating guide for AI agents
+- `AGENTS.md` — primary operating guide for AI agents
 - `infrastructure/cv-generation-instructions.md` — CV generation workflow
 - `profile/job-preferences.md` — your job fit preferences (user-maintained)
 - `infrastructure/job-screening-instructions.md` — screening rubric and output format
