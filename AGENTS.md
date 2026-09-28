@@ -42,6 +42,7 @@ This is a **private master career record**, not a portfolio or CV. User profile 
 ├── .github/                                   # GitHub-specific configuration
 │   └── copilot-instructions.md                    # GitHub Copilot pointer
 ├── AGENTS.md                                  # This file (shared AI instructions; Claude Code + Codex)
+├── CLAUDE.md                                  # Imports AGENTS.md, for older Claude Code versions
 └── .cursorrules                               # Cursor pointer
 ```
 

@@ -44,10 +44,10 @@ Any software engineer who wants a repeatable application workflow, regardless of
 The repository ships with configuration files for:
 
 - **GitHub Copilot** (`.github/copilot-instructions.md`)
-- **Claude Code** and **OpenAI Codex** (`AGENTS.md`, read natively by both)
+- **Claude Code** and **OpenAI Codex** (`AGENTS.md`, read natively by both; `CLAUDE.md` imports it for older Claude Code versions)
 - **Cursor** (`.cursorrules`)
 
-`AGENTS.md` holds the shared instruction set and the Copilot and Cursor files point to it, so the workflow is consistent regardless of which tool you use. Claude Code reads `AGENTS.md` natively from version 2.1.277.
+`AGENTS.md` holds the shared instruction set and the Copilot and Cursor files point to it, so the workflow is consistent regardless of which tool you use. Claude Code reads `AGENTS.md` natively from version 2.1.277; the one-line `CLAUDE.md` (`@AGENTS.md`) covers earlier versions and Bedrock, Vertex and Foundry.
 
 ## Getting started
 
@@ -133,7 +133,7 @@ The standard flow:
 │   └── glossary.md                   # Naming conventions and standards
 ├── scripts/                   # Repository tooling (linting, validation)
 ├── AGENTS.md                  # Primary operating guide for AI agents
-└── .github/ / .cursorrules    # Copilot and Cursor pointers to AGENTS.md
+└── .github/ / CLAUDE.md / .cursorrules  # Copilot, Claude Code (fallback) and Cursor pointers to AGENTS.md
 ```
 
 ## Key docs
