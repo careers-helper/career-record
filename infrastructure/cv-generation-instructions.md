@@ -2,7 +2,7 @@
 
 This file covers CV generation for roles that have already been triaged through the inbox workflow — that is, the `output/<id>/` folder already exists and contains a `job-description.*` file. The output is a tailored CV as both a Markdown source (`cv.md`) and a styled Word document (`cv.docx`), followed by a recruiter-perspective review.
 
-For new applications, use the Inbox Batch Workflow in `infrastructure/agent-instructions.md`: drop the job description in `inbox/` (any readable format) and triage it first. CV generation is Pass 2 of that workflow.
+For new applications, use the Inbox Batch Workflow in `AGENTS.md`: drop the job description in `inbox/` (any readable format) and triage it first. CV generation is Pass 2 of that workflow.
 
 ## Generating a CV for a Triaged Role
 
