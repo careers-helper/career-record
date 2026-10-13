@@ -41,13 +41,7 @@ Any software engineer who wants a repeatable application workflow, regardless of
 
 ## Supported AI tools
 
-The repository ships with configuration files for:
-
-- **GitHub Copilot** (`.github/copilot-instructions.md`)
-- **Claude Code** and **OpenAI Codex** (`AGENTS.md`, read natively by both; `CLAUDE.md` imports it for older Claude Code versions)
-- **Cursor** (`.cursorrules`)
-
-`AGENTS.md` holds the shared instruction set and the Copilot and Cursor files point to it, so the workflow is consistent regardless of which tool you use. Claude Code reads `AGENTS.md` natively from version 2.1.277; the one-line `CLAUDE.md` (`@AGENTS.md`) covers earlier versions and Bedrock, Vertex and Foundry.
+The repository ships one instruction file, `AGENTS.md`, which **Claude Code** (from version 2.1.277), **OpenAI Codex**, **GitHub Copilot** (code review on GitHub.com, the CLI, the coding agent and Chat in VS Code) and **Cursor** all read natively, so the workflow is consistent regardless of which tool you use. There are no pointer files: a `CLAUDE.md` anywhere in the repository would make Claude Code ignore `AGENTS.md`, and a separate Copilot or Cursor file would be a second copy that drifts. The exceptions are Copilot code review run inside an IDE, Copilot Chat in Visual Studio, JetBrains or on GitHub.com, and a Claude Code older than 2.1.277 or a session where native `AGENTS.md` loading is unavailable (see Claude Code's memory documentation): there, update the tool, or start the session by asking the agent to read `AGENTS.md`.
 
 ## Getting started
 
@@ -132,8 +126,7 @@ The standard flow:
 │   ├── sample-cv.md / .docx          # CV structure template and style reference
 │   └── glossary.md                   # Naming conventions and standards
 ├── scripts/                   # Repository tooling (linting, validation)
-├── AGENTS.md                  # Primary operating guide for AI agents
-└── .github/ / CLAUDE.md / .cursorrules  # Copilot, Claude Code (fallback) and Cursor pointers to AGENTS.md
+└── AGENTS.md                  # The one instruction file for every AI agent
 ```
 
 ## Key docs
