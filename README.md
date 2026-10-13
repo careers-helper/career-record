@@ -41,7 +41,7 @@ Any software engineer who wants a repeatable application workflow, regardless of
 
 ## Supported AI tools
 
-The repository ships one instruction file, `AGENTS.md`, which **Claude Code** (from version 2.1.277), **OpenAI Codex** and **GitHub Copilot** (code review on GitHub.com, the CLI and the coding agent) all read natively, so the workflow is consistent regardless of which tool you use. There are no pointer files: a `CLAUDE.md` anywhere in the repository would make Claude Code ignore `AGENTS.md`, and a separate Copilot or Cursor file would be a second copy that drifts. Copilot Chat in an IDE, Copilot code review run inside an IDE, and Cursor do not read `AGENTS.md`; nor does a Claude Code older than 2.1.277 or a session where native `AGENTS.md` loading is unavailable (see Claude Code's memory documentation). In those cases update the tool, or start the session by asking the agent to read `AGENTS.md`.
+The repository ships one instruction file, `AGENTS.md`, which **Claude Code** (from version 2.1.277), **OpenAI Codex**, **GitHub Copilot** (code review on GitHub.com, the CLI, the coding agent and Chat in VS Code) and **Cursor** all read natively, so the workflow is consistent regardless of which tool you use. There are no pointer files: a `CLAUDE.md` anywhere in the repository would make Claude Code ignore `AGENTS.md`, and a separate Copilot or Cursor file would be a second copy that drifts. The exceptions are Copilot code review run inside an IDE, Copilot Chat in Visual Studio, JetBrains or on GitHub.com, and a Claude Code older than 2.1.277 or a session where native `AGENTS.md` loading is unavailable (see Claude Code's memory documentation): there, update the tool, or start the session by asking the agent to read `AGENTS.md`.
 
 ## Getting started
 
