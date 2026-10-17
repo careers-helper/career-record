@@ -70,7 +70,7 @@ Passing CI does not show that an upgrade is safe: a changed default or a dropped
 
 - **Read the changelog for every major version crossed** (release notes, `CHANGELOG.md`, or the migration guide), not just the latest release. For minor and patch updates, skim the notes for deprecations, changed defaults and security fixes. If there is no changelog, compare the tagged source or the published package and say so.
 - **Search the codebase for everything that changed**: removed or renamed APIs, new defaults, changed peer, Node or runtime requirements, config format changes. Fix what is affected in the same PR.
-- **Test what `main` will become, not the branch.** Merge `main` into the PR locally, then run a frozen install, lint and build. A lockfile merged as text can break even when GitHub reports no conflict, most often when the PR predates another dependency change.
+- **Test what `main` will become, not the branch.** Fetch, then merge the current `origin/main` into the PR locally (a stale local `main` tests the old base), and run a frozen install, lint and build. A lockfile merged as text can break even when GitHub reports no conflict, most often when the PR predates another dependency change.
 - **Write it up on the PR**, and in your reply: what changed that touches this codebase, what the PR does about each item, and links to the changelog sections you read. Say plainly when a major bump turns out to need no changes, and why.
 - **Ask before merging** when a change alters behaviour users or Martin would notice, drops support for something in use, or needs a decision. Otherwise the standing merge rule applies once the write-up is posted.
 <!-- /shared:base -->
